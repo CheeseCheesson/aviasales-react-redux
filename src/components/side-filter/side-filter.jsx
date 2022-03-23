@@ -50,15 +50,17 @@ const SideFilter = () => {
         <form action='' className={sideFilterStyle.selectFilter__form}>
           {
             transfers.map(item => (
-              <label key={item.name} className={sideFilterStyle.selectFilter__label} htmlFor={item.name}>
+              <label key={item.name}>
                 <input
                   type='checkbox'
+                  className={sideFilterStyle.checkHidden}
                   name={item.name}
                   id={item.name}
                   checked={item.checked}
                   onChange={() => handleCheckFilter(item.name)}
                 />
                 {item.name}
+                <span className={sideFilterStyle.checker}></span>
               </label>
             ))
           }
