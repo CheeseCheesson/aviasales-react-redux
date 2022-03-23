@@ -11,7 +11,7 @@ const Button = () => {
   const { sorts } = useSelector((store) => store['tickets'])
 
   return (
-    <div className="article__buttons buttons">
+    <div className={buttonStyle.articleButtons}>
       {sorts.map((item) => (
           <button
             key={item.name}

@@ -8,13 +8,12 @@
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
   margin-right: 20px;
-  min-height: 262px
+  min-height: 262px;
 }
 
 .selectFilter__body {
   margin-top: 20px;
   padding-left: 20px;
-
 }
 
 .selectFilter__title {
@@ -22,7 +21,7 @@
   font-size: 12px;
   line-height: 100%;
 }
-.selectFilter__form{
+.selectFilter__form {
   margin-bottom: 20px;
 }
 
@@ -32,14 +31,13 @@
   flex-direction: column;
 }
 
-
 label {
   padding-left: 30px;
   position: relative;
   cursor: pointer;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -59,4 +57,12 @@ input[type="checkbox"] {
 
 input:checked + .checker {
   background-image: url('../../assets/checked/checker-on.svg');
+}
+@media (max-width: 790px) {
+  .selectFilter {
+    display: flex;
+    justify-self: start;
+    max-width: 50px;
+    margin-left: 20%;
+  }
 }

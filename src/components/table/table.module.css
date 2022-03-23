@@ -1,21 +1,24 @@
 table {
-    margin-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 150%;
-    text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
-td, th {
-    width: 141px;
-    height: 20px;
+td,
+th {
+  min-width: 10em;
+  height: 20px;
 }
 
 table thead {
-    color: #A0B0B9;
+  color: #a0b0b9;
 }
 
-td, th {
-    text-transform: initial;
+td,
+th {
+  text-transform: initial;
 }
+
